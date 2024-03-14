@@ -142,7 +142,7 @@ html, body {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     padding: 20px 0;
   }
 
@@ -164,12 +164,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    margin-bottom: 50px;
   }
 
   /* Styles de la section d'hôtel */
 
   .hotel-section {
-    max-width: 840px;
+    max-width: 980px;
     max-height: 540px;
     padding: 30px;
     background-color: #f2f2f2;
@@ -271,7 +272,8 @@ html, body {
   /* Styles de la section populaire */
 
   .popular-section {
-    max-width: 429px;
+    width: 600px;
+    height: 540px;
     padding: 30px;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -287,13 +289,13 @@ html, body {
  .popular-card {
   display: flex;
   height: 146px;
-  min-width: 369px;
+  width: 600px;
   border-radius: 10px;
  }
 
  .popular-card img {
   height: auto;
-  width: 123px;
+  width: 130px;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
  }
@@ -305,3 +307,54 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 0 10px 10px 0;
  }
+
+ @media only screen and (max-width: 1024px) {
+  .hosting-section {
+      flex-direction: column;
+      margin-bottom: 40px;
+  }
+  .hotel-section {
+      order: 1; /* hotel-section en première position */
+  }
+  .popular-section {
+    order: 2;
+    width: 93%; /* Modifier la largeur pour qu'elle occupe toute la largeur de l'écran */
+    height: 200px;
+  }
+
+  .popular-cards {
+    display: flex; /* Utiliser flexbox pour aligner horizontalement les cartes */
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px 0;
+  }
+  .popular-cards img{
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .activities-cardd {
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligner les cartes de droite à gauche */
+  }
+
+  .card-df {
+    margin: 10px;
+    width: 200px; /* Limiter la largeur maximale de la carte */
+  }
+
+  .card-df img {
+    width: 100%; /* Pour que les images remplissent la largeur de la carte */
+    max-height: 200px; /* Hauteur maximale pour les images */
+    object-fit: cover;
+    border-radius: 10px; /* Ajout de bord arrondi */
+  }
+  .activities-section .activities-cardd .card-df .bar{
+    width: 182px;
+    height: 40px;
+  }
+}
+
+
+
+
