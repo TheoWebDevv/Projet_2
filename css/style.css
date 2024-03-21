@@ -351,13 +351,125 @@ html, body {
     width: 100%; /* Pour que les images remplissent la largeur de la carte */
     max-height: 200px; /* Hauteur maximale pour les images */
     object-fit: cover;
-    border-radius: 10px; /* Ajout de bord arrondi */
   }
   .activities-section .activities-cardd .card-df .bar{
     width: 182px;
     height: 40px;
   }
   
+}
+
+@media only screen and (max-width: 600px) {
+  /* Réduire la taille du texte dans le header */
+  header .logo a {
+    font-size: 16px;
+  }
+
+  header a {
+    font-size: 12px;
+    padding: 8px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 600px;
+  }
+  .container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hosting-section {
+    max-width:600px;
+    align-items: center;
+    margin-bottom: 980px;
+    background-color: none;
+  }
+  .popular-card{
+    max-width:400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Réduire la taille du texte dans les filtres */
+  .filter button {
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+  .hotel-section {
+    order: 2; /* hotel-section en deuxieme position */
+    background-color: white;
+  }
+  .popular-section {
+    order: 1;
+    margin-bottom: 300px;
+  }
+
+  /* Réduire la taille du texte dans la section d'hébergement */
+  .hotel-section .hotel-card .bar {
+    padding: 8px;
+  }
+  .popular-cards {
+    flex-direction: column;
+  }
+
+  /* Redimensionner les images dans la section populaire */
+  .popular-card img {
+    width: 20%;
+  }
+  .popular-card .details{
+    width: 190px;
+  }
+  .card-df img {
+    width: 100%; 
+    object-fit: cover;
+  }
+  .activities-section .activities-cardd .card-df .bar{
+    width: 240px;
+    height: 40px;
+  }
+  /* footer */
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .row {
+    gap: 20px;
+    font-size: 13px;
+    padding: 15px 0;
+    border-top: 1px solid #DCDCDC;
+    background-color: #f2f2f2;
+  }
+  /* texte aligner au centre de la page */
+  .hotel-section h3{
+    text-align: center;
+    font-size: 21px;
+  }
+  .activities-section h3{
+    text-align: center;
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Aligner les boutons  */
+  .filter {
+    display: flex;
+    flex-wrap: wrap; /* Permettre le retour à la ligne */
+    justify-content: center;
+    gap: 5px;
+  }
+  .filter button {
+    margin: 5px; /* Espacement entre les boutons */
+    max-width: 150px; /*  largeur maximale des boutons */
+    height: 40px; /*  hauteur des boutons */
+    font-size: 14px; /*  taille de la police */
+  }
 }
 
 
