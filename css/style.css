@@ -386,14 +386,15 @@ html, body {
   .hosting-section {
     max-width:600px;
     align-items: center;
-    margin-bottom: 980px;
+    margin-bottom: 970px;
     background-color: none;
   }
   .popular-card{
-    max-width:400px;
-    align-items: center;
+    max-width:600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
   }
 
   /* Réduire la taille du texte dans les filtres */
@@ -407,7 +408,7 @@ html, body {
   }
   .popular-section {
     order: 1;
-    margin-bottom: 300px;
+    height: 550px;
   }
 
   /* Réduire la taille du texte dans la section d'hébergement */
@@ -420,7 +421,8 @@ html, body {
 
   /* Redimensionner les images dans la section populaire */
   .popular-card img {
-    width: 20%;
+    max-width: 100%; /* Assurez-vous que la largeur de l'image ne dépasse pas la largeur de son conteneur */
+    border-radius: 10px 0 0 10px; /* Ajoutez un rayon de bordure uniquement à gauche pour correspondre au design initial */
   }
   .popular-card .details{
     width: 190px;
@@ -452,6 +454,10 @@ html, body {
     font-size: 21px;
   }
   .activities-section h3{
+    text-align: center;
+    font-size: 21px;
+  }
+  .popular-section h3{
     text-align: center;
     font-size: 21px;
   }
