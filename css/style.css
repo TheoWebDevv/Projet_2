@@ -162,7 +162,7 @@ h3, p {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 20px 0;
+  padding: 20px 0px 20px 20px;
 }
 
 .container .card {
@@ -317,7 +317,7 @@ footer a:hover {
 
 .popular-card img {
   height: auto;
-  width: 35%;
+  width: 22%;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
@@ -348,11 +348,18 @@ footer a:hover {
   height: auto;
 }
 
+.container{
+  padding: 20px 0;
+}
+
 .popular-cards {
   display: flex; /* Utiliser flexbox pour aligner horizontalement les cartes */
   flex-direction: row;
-  gap: 5px;
+  gap: 15px;
   padding: 10px 0;
+}
+.popular-card{
+  width: 270px
 }
 
 .popular-cards img{
@@ -399,13 +406,26 @@ header a {
   font-size: 12px;
   padding: 8px;
 }
+.container{
+  padding: 20px 10px;
+}
+
 
 .hosting-section {
-  max-width:100%;
+  max-width: auto;
   align-items: center;
-  margin-bottom: 970px;
+  margin-bottom: 0; /* Modifier la marge basse pour correspondre à activities-section */
   background-color: none;
+  margin-bottom: 970px;
+  display: flex;
+  flex-direction: column; /* Changer la direction pour afficher en colonne */
+  padding-bottom: 50px;
 }
+
+.icon2 {
+  display: none; /* Cacher l'élément icon2 sur les petits écrans */
+}
+
 
 .popular-card{
   max-width: auto;
@@ -420,6 +440,13 @@ header a {
   background-color: white;
   padding: 10px;
   padding-bottom: 50px;
+  width: 100%;
+}
+.hotel-section .hotel-card img {
+  height: 140px;
+  width: 340px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .popular-section {
@@ -599,4 +626,10 @@ footer .row {
   cursor: pointer;
   background-color: #deebff;
 }
+
+footer ul li {
+  list-style: none;
+  margin: 0px 0px 4px;
+}
+
 }
