@@ -17,13 +17,13 @@ body {
 }
 
 main {
-  margin-top: 60px;
+  margin-top: 0px;
   padding: 50px;
 }
 
 header {
   height: 60px;
-  position: fixed;
+  position: static;
   width: 100%;
   display: flex;
   align-items: center;
@@ -56,12 +56,13 @@ header ul li {
   border-radius: 5px;
   transition: 0.2s;
 }
-
-header ul li:hover {
-  background: #DCDCDC;
+header ul li a:hover {
+  color: #018dff;
   border-radius: 5px;
   transition: 0.2s;
 }
+
+  
 
 header ul li:hover * {
   color: #fff;
@@ -259,7 +260,7 @@ footer {
   flex-direction: column;
   margin-top: auto;
   background: #fff;
-
+  padding: 0px 40px 0px 20px;
 }
 
 footer .row {
@@ -278,6 +279,9 @@ footer strong {
 
 footer ul li {
   list-style: none;
+}
+footer ul li {
+  margin: 0px 0px 4px;
 }
 
 footer a {
@@ -348,6 +352,14 @@ footer a:hover {
   height: auto;
 }
 
+main{
+  margin-top: 0px;
+}
+
+header {
+  position: static;
+}
+
 .container{
   padding: 20px 0;
 }
@@ -389,17 +401,25 @@ footer a:hover {
   width: 182px;
   height: 40px;
 }
+
+footer .row {
+  gap: 100px;
+}
 }
 
 @media only screen and (max-width: 600px) {
 main {
-  margin-top: 70px;
+  margin-top: 0px;
   padding: 15px;
 }
 
 /* Réduire la taille du texte dans le header */
 header .logo a {
   font-size: 16px;
+}
+
+header{
+  position: static;
 }
 
 header a {
@@ -428,7 +448,7 @@ header a {
 
 
 .popular-card{
-  max-width: auto;
+  width: auto;
   display: flex;
   flex-direction: row;
   padding: 5px 5px 5px 5px;
@@ -451,7 +471,7 @@ header a {
 
 .popular-section {
   order: 1;
-  height: 550px;
+  height: 570px;
   background-color: #f2f2f2;
   width: 100%;
   border-radius: 0%;
@@ -614,7 +634,11 @@ footer .row {
   display: flex;
   gap: 5px;
   transition: all 0.3s;
-  width: 150px; /* Largeur fixe pour chaque bouton */
+  width: 170px; /* Largeur fixe pour chaque bouton */
+}
+
+footer{
+  padding: 0px;
 }
 
 .filter-mobile button svg {
