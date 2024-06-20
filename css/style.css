@@ -108,7 +108,7 @@ header ul li:hover * {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 
@@ -180,8 +180,9 @@ h3, p {
 .container {
   width: auto;
   display: flex;
+  height: 470px;
   flex-wrap: wrap;
-  gap: 40px;
+  /* gap: 40px; */
   padding: 20px 0px 20px 20px;
 }
 
@@ -210,7 +211,7 @@ h3, p {
 
 .hotel-section {
   max-width: 1090px;
-  max-height: 570px;
+  /* max-height: 570px; */
   padding: 30px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -222,16 +223,25 @@ h3, p {
 }
 */
 
+.hotel-card{
+  padding: 0px 20px 0px 0px;
+  width: 30%;
+  max-width: 400px;
+  max-height: 160px
+}
+
 
 .hotel-section .hotel-card img {
   height: 145px;
-  min-width: 320px;
+  width: 100%;
+  /*min-width: 320px; */
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
 
 .hotel-section .hotel-card .bar {
+  min-width: auto;
   padding: 10px;
   position: relative;
   margin-top: -28px;
@@ -367,6 +377,47 @@ footer a:hover {
   display: none;
 }
 
+/*footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  margin: 10px 0;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+} */
+
+@media only screen  and (max-width: 1200px) {
+
+  .hotel-section .hotel-card .bar{
+    white-space: nowrap;
+    overflow: scroll;
+  }
+
+}
+
+
 @media only screen and (max-width: 1024px) {
 
 .filter-pc button span{
@@ -384,6 +435,13 @@ footer a:hover {
 .hotel-section {
     order: 1; /* hotel-section en première position */
 }
+
+.hotel-card {
+
+  /* width: 150px; */
+  
+}
+
 .popular-section {
   order: 2;
   width: auto; /* Modifier la largeur pour qu'elle occupe toute la largeur de l'écran */
@@ -392,7 +450,7 @@ footer a:hover {
 
 .hotel-section .hotel-card img {
   height: 136px;
-  min-width: 250px;
+  min-width: 120px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -412,9 +470,11 @@ main{
   flex-direction: row;
   gap: 15px;
   padding: 10px 0;
+  min-width: 100px;
 }
 .popular-card{
-  width: 270px
+  width: 270px;
+  min-width: 120px;
 }
 
 .popular-cards img{
@@ -426,7 +486,7 @@ main{
 }
 
 .activities-cardd {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: flex-start; /* Aligner les cartes de droite à gauche */
 }
 
@@ -434,6 +494,7 @@ main{
   margin: 10px;
   width: 200px; /* Limiter la largeur maximale de la carte */
   padding: 0px 0px 0px 5px;
+  min-width: 100px;
 }
 
 .card-df img {
@@ -442,8 +503,11 @@ main{
   object-fit: cover;
 }
 .activities-section .activities-cardd .card-df .bar{
-  width: 170px;
+  /* width: 170px; */
   height: 40px;
+  min-width: 70px;
+  white-space: nowrap;
+  overflow: scroll;
 }
 
 footer .row {
@@ -533,11 +597,28 @@ header ul li:hover {
   margin-bottom: -17px;
 }
 
+.hotel-card{
+  width: 95%;
+  max-width: 600px;
+  min-width: 300px;
+  padding-bottom: 10px;
+}
+
 
 
 .container{
   padding: 20px 10px;
+  height: auto;
+  gap: 60px;
+  padding-bottom: 60px;
 }
+
+.activities-cardd {
+   flex-wrap: wrap; 
+  justify-content: flex-start;
+}
+
+
 
 .hotel-section h3 {
   padding: 0px 0px 0px 10px;
@@ -549,7 +630,7 @@ header ul li:hover {
   align-items: center;
   margin-bottom: 0; /* Modifier la marge basse pour correspondre à activities-section */
   background-color: none;
-  margin-bottom: 970px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column; /* Changer la direction pour afficher en colonne */
   padding-bottom: 50px;
@@ -573,11 +654,13 @@ header ul li:hover {
   background-color: white;
   padding: 10px;
   padding-bottom: 50px;
-  width: 100%;
+  width: auto;
 }
 .hotel-section .hotel-card img {
   height: 140px;
-  width: 340px;
+  /* width: 340px; */
+  max-width: 600px; 
+  min-width: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -617,6 +700,8 @@ header ul li:hover {
 .card-df{
   flex: 1; 
   margin: 10px;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .card-df img {
@@ -625,7 +710,7 @@ header ul li:hover {
 }
 
 .activities-section .activities-cardd .card-df .bar{
-  width: 306px;
+   /*width: 306px; */
   height: 40px;
 }
 
