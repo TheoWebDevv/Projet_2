@@ -716,7 +716,7 @@ header ul li:hover {
   margin-bottom: 0px;
   display: flex;
   flex-direction: column; /* Changer la direction pour afficher en colonne */
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .icon2 {
@@ -953,6 +953,7 @@ footer ul li {
   padding: 10px;
   padding-bottom: 50px;
   width: auto;
+  padding-right: 10px;
 }
 .card-df img {
   height: 140px;
