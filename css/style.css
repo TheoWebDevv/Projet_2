@@ -30,7 +30,7 @@ header {
   text-decoration: none;
   padding: 0 10px;
   background: #fff;
-  border-bottom: 1px solid #DCDCDC;
+  /* border-bottom: 1px solid #DCDCDC; */
 }
 
 header .logo a {
